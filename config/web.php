@@ -13,6 +13,7 @@ $config = [
     ],
     'language' => 'ru-RU', // <- здесь!
     'components' => [
+
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'EfaOIaK8nEAjTbdGaOyVjK6catzAHuqi',
@@ -45,14 +46,10 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager',
         ],
-        */
+
 
         'urlManager' => [
             'enablePrettyUrl' => true,
