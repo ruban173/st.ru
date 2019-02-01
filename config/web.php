@@ -23,7 +23,7 @@ $config = [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
-            'identityClass' => 'app\models\User',
+            'identityClass' => 'app\models\entities\User',
             'enableAutoLogin' => true,
         ],
         'errorHandler' => [
@@ -55,12 +55,13 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                '' => 'site/index',
+                '' => '/mobile/login',
                 '<controller:\w+>/<action:\w+>/' => '<controller>/<action>',
             ],
         ],
     ],
     'params' => $params,
+   // 'defaultRoute' => 'mobile/login',
 ];
 
 if (YII_ENV_DEV) {

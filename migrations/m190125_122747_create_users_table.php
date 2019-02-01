@@ -16,9 +16,11 @@ class m190125_122747_create_users_table extends Migration
             'id' => $this->primaryKey(),
             'login'=>$this->string(64),
             'password'=>$this->string(64),
-            'accessToken'=>$this->string(64),
+            'token'=>$this->string(64),
+            'date_create'=>$this->timestamp()->defaultExpression('CURRENT_TIMESTAMP'),
             'date_up'=>$this->timestamp()->defaultExpression('CURRENT_TIMESTAMP'),
             'user_profile_id'=>$this->integer(),
+            'status'=>$this->integer()->defaultValue(10)
         ]);
 
 

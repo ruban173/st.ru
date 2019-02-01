@@ -9,7 +9,7 @@ namespace app\commands;
 use Yii;
 use yii\console\Controller;
 use yii\console\ExitCode;
-use app\models\Users;
+use app\models\entities\User;
 
 /**
  * This command echoes the first argument that you have entered.
@@ -28,19 +28,19 @@ class CreateUserController extends Controller
      */
     public function actionIndex($message = 'done')
     {
-        $user=new Users();
+        $user=new User();
         $user->login='admin';
-        $user->password=MD5('password');
+        $user->password=Yii::$app->getSecurity()->generatePasswordHash('password');
         $user->save();
 
-        $user=new Users();
+        $user=new User();
         $user->login='editor';
-        $user->password=MD5('password');
+        $user->password=Yii::$app->getSecurity()->generatePasswordHash('password');
         $user->save();
 
-        $user=new Users();
+        $user=new User();
         $user->login='user';
-        $user->password=MD5('password');
+        $user->password=Yii::$app->getSecurity()->generatePasswordHash('password');
         $user->save();
 
     echo $message . "\n";
