@@ -32,11 +32,11 @@ EVENTCLICK;
 $JSEDayClick=<<<DAYCLICK
 function(date, jsEvent, view) {
         var clickDate = date.format();
-      
+        var data=date.format()+' '+jsEvent+' ' +view;
+        console.log(view);
         $('#modal-dialog').modal('show');
         
-         $('#modal-dialog').find('#modelContent')
-                    .html(data);
+         $('#modal-dialog').find('#modelContent').html(data);
         
         
         }
@@ -72,7 +72,7 @@ Modal::begin([
     'footer' => 'Низ окна',
 ]);
 
-echo 'Say hello...';
+echo '<div id="modelContent"> </div>';
 
 Modal::end();
 

@@ -55,9 +55,16 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                '' => '/mobile/login',
+               // '' => '/mobile/login',
+                '' => 'users',
+
                 '<controller:\w+>/<action:\w+>/' => '<controller>/<action>',
             ],
+        ],
+    ],
+    'modules' => [
+        'users' => [
+            'class' => 'app\modules\users\users',
         ],
     ],
     'params' => $params,
