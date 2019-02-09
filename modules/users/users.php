@@ -17,6 +17,8 @@ class users extends \yii\base\Module
      */
     public function init()
     {
+        $this->defaultRoute='profile';
+
         parent::init();
 
         // custom initialization code goes here
