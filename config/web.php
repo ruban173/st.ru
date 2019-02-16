@@ -56,8 +56,8 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                // '' => '/mobile/login',
-                '' => 'users',
-
+                //'' => 'users',
+                '' => 'attendance',
                 '<controller:\w+>/<action:\w+>/' => '<controller>/<action>',
             ],
         ],
@@ -65,6 +65,9 @@ $config = [
     'modules' => [
         'users' => [
             'class' => 'app\modules\users\users',
+        ],
+        'attendance' => [
+            'class' => 'app\modules\attendance\attendance',
         ],
     ],
     'params' => $params,

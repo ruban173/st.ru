@@ -127,7 +127,7 @@ class ProfileController extends Controller
 
     public function actionListStudentAjax()
     {
-
+/*
   if (\Yii::$app->request->isAjax) {
             $list = Yii::$app->request->post('list');
             $students = explode("\n", $list);
@@ -145,8 +145,8 @@ class ProfileController extends Controller
             }
             return true;
 
-
- /*    if (\Yii::$app->request->isAjax) {
+*/
+   if (\Yii::$app->request->isAjax) {
             $list = Yii::$app->request->post('list');
             $students = explode("\n", $list);
             $sqlBegin='INSERT INTO users_profiles(first_name, middle_name, last_name, birdthday) VALUES';
@@ -161,7 +161,7 @@ class ProfileController extends Controller
 
             return     Yii::$app->db->createCommand($sqlBegin.$sqlBody)->execute();
 
-*/
+
 
         }
 

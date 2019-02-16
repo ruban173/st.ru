@@ -13,8 +13,6 @@ class ComposerStaticInitc85e4cbaad6962ddc3653041e56fc668
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
-        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '180092cfc969a12e06f2132a203a3184' => __DIR__ . '/..' . '/codeception/verify/src/Codeception/function.php',
     );
@@ -50,7 +48,6 @@ class ComposerStaticInitc85e4cbaad6962ddc3653041e56fc668
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Contracts\\' => 18,
             'Symfony\\Component\\Yaml\\' => 23,
-            'Symfony\\Component\\Process\\' => 26,
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\EventDispatcher\\' => 34,
             'Symfony\\Component\\DomCrawler\\' => 29,
@@ -65,13 +62,10 @@ class ComposerStaticInitc85e4cbaad6962ddc3653041e56fc668
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
-            'GuzzleHttp\\Promise\\' => 19,
-            'GuzzleHttp\\' => 11,
         ),
         'F' => 
         array (
             'Faker\\' => 6,
-            'Facebook\\WebDriver\\' => 19,
         ),
         'D' => 
         array (
@@ -153,10 +147,6 @@ class ComposerStaticInitc85e4cbaad6962ddc3653041e56fc668
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
         ),
-        'Symfony\\Component\\Process\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/process',
-        ),
         'Symfony\\Component\\Finder\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/finder',
@@ -189,21 +179,9 @@ class ComposerStaticInitc85e4cbaad6962ddc3653041e56fc668
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
         ),
-        'GuzzleHttp\\Promise\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
-        ),
-        'GuzzleHttp\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
-        ),
         'Faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
-        ),
-        'Facebook\\WebDriver\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/facebook/webdriver/lib',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
